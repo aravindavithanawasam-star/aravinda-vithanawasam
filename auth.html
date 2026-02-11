@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - MR GEN Z</title>
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>MR GEN Z</h2>
+            <ul class="auth-tabs">
+                <li><a href="#login" class="active" onclick="switchTab('login')">Login</a></li>
+                <li><a href="#register" onclick="switchTab('register')">Register</a></li>
+            </ul>
+
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p class="form-message"></p>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="register-form" class="auth-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password (min 8 characters)" minlength="8" required>
+                <input type="password" placeholder="Confirm Password" minlength="8" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <button type="submit">Register</button>
+                <p class="form-message"></p>
+            </form>
+
+            <div class="auth-footer">
+                <p>Secure authentication powered by MR GEN Z</p>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
